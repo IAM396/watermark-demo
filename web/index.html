@@ -61,39 +61,24 @@
                     </div>
 
                     <div class="form-group video-group">
-                        <label><b>Watermark</b></label>
-                        <small class="form-text text-muted float-right">Max file size: 250Mb</small>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <button type="button" class="btn btn-secondary w-100 upload-button toggle-button">
-                                    <span class="spinner-border spinner-border-sm d-none loading-image" role="status" aria-hidden="true"></span>
-                                    <i class="fas fa-upload upload-icon"></i> Upload
-                                </button>
-                            </div>
-                            <div class="col-6">
-                                <button type="button" class="btn btn-secondary w-100 url-button toggle-button"  data-toggle="collapse" href="#urlExpand" role="button" aria-expanded="false" aria-controls="urlExpand">
-                                    <i class="fas fa-link "></i> URL
-                                </button>
-                            </div>
-                        </div>
-                        <input name="watermark-url"
-                            type="url"
-                            pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?"
-                            oninvalid="setCustomValidity('Only valid URLs are allowed')"
-                            oninput="setCustomValidity('')"
-                            class="form-control input-url"
-                            id="watermark-url"
-                            placeholder="https://mydomain.com/storage/logo.png"
-                            maxlength="300"
-                        />
-                        <input name="watermark-upload" class="d-none upload" type="file" id="watermark-upload"/>
-                        <div class="my-1 file-placeholder" id="watermark-file">
-                            <span class="name"></span>
-                            <a type="button" class="btn remove-file">
-                                <i class="fas fa-trash"></i>
-                            </a>
-                        </div>
-                    </div>
+    <label><b>Watermark</b></label>
+    <small class="form-text text-muted float-right">Max file size: 250Mb</small>
+    <div class="row mb-3">
+        <div class="col-6">
+            <button type="button" class="btn btn-secondary w-100 upload-button toggle-button">
+                <span class="spinner-border spinner-border-sm d-none loading-image" role="status" aria-hidden="true"></span>
+                <i class="fas fa-upload upload-icon"></i> Upload
+            </button>
+        </div>
+    </div>
+    <input name="watermark-upload" class="d-none upload" type="file" id="watermark-upload"/>
+    <div class="my-1 file-placeholder" id="watermark-file">
+        <span class="name"></span>
+        <a type="button" class="btn remove-file">
+            <i class="fas fa-trash"></i>
+        </a>
+    </div>
+</div>
 
                     <div class="row">
                         <div class="col-lg-6">
