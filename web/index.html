@@ -20,41 +20,28 @@
     <div class="container content my-4">
         <div class="row">
             <div class="col-5">
-                <form class="jumbotron" method="post">
-                    <div class="form-group video-group">
-                        <label><b>Video</b></label>
-                        <small class="form-text text-muted float-right">Max file size: 250Mb</small>
-                        <div class="row mb-3">
-                            <div class="col-6">
-                                <button type="button" class="btn btn-secondary w-100 upload-button toggle-button">
-                                    <span class="spinner-border spinner-border-sm d-none loading-image" role="status" aria-hidden="true"></span>
-                                    <i class="fas fa-upload upload-icon"></i> Upload
-                                </button>
-                            </div>
-                            <div class="col-6">
-                                <button type="button" class="btn btn-secondary w-100 url-button toggle-button"  data-toggle="collapse" href="#urlExpand" role="button" aria-expanded="false" aria-controls="urlExpand">
-                                    <i class="fas fa-link "></i> URL
-                                </button>
-                            </div>
-                        </div>
-                        <input name="video-url"
-                            type="url"
-                            pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?"
-                            oninvalid="setCustomValidity('Only valid URLs are allowed')"
-                            oninput="setCustomValidity('')"
-                            class="form-control input-url"
-                            id="video-url"
-                            placeholder="https://mydomain.com/storage/video.mp4"
-                            maxlength="300"
-                        >
-                        <input name="video-upload" class="d-none upload" type="file" id="video-upload"/>
-                        <div class="my-1 file-placeholder" id="video-file">
-                            <span class="name"></span>
-                            <a type="button" class="btn remove-file">
-                                <i class="fas fa-trash"></i>
-                            </a>
-                        </div>
-                    </div>
+<form class="jumbotron" method="post">
+    <div class="form-group video-group">
+        <label><b>Video</b></label>
+        <small class="form-text text-muted float-right">Max file size: 250Mb</small>
+        <div class="row mb-3">
+            <div class="col-6">
+                <button type="button" class="btn btn-secondary w-100 upload-button toggle-button">
+                    <span class="spinner-border spinner-border-sm d-none loading-image" role="status" aria-hidden="true"></span>
+                    <i class="fas fa-upload upload-icon"></i> Upload
+                </button>
+            </div>
+        </div>
+        <input name="video-upload" class="d-none upload" type="file" id="video-upload"/>
+        <div class="my-1 file-placeholder" id="video-file">
+            <span class="name"></span>
+            <a type="button" class="btn remove-file">
+                <i class="fas fa-trash"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Rest of the form remains unchanged -->
+</form>
                     <div class="form-group" id="title-group">
                         <label for="clip-length">Duration <small class="form-text text-muted float-right">&nbsp (seconds)</small></label>
                         <small class="form-text text-muted float-right">Max length: 2 minutes</small>
