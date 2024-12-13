@@ -94,21 +94,16 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label for="padding">Padding <small class="form-text text-muted float-right">&nbsp (pixels)</small></label>
-                                <input name="padding"
-                                    type="number"
-                                    min=0
-                                    max=100
-                                    step=1
-                                    pattern="[0-1]"
-                                    oninvalid="setCustomValidity('Only values between 0 and 100 are allowed')"
-                                    oninput="setCustomValidity('')"
-                                    class="form-control"
-                                    id="padding"
-                                    value="20"
-                                    maxlength="3"
-                                />
-                            </div>
+    <label for="padding">Padding <small class="form-text text-muted float-right">&nbsp (pixels)</small></label>
+    <input name="padding"
+        type="number"
+        class="form-control"
+        id="padding"
+        value="20"
+        style="display: none;"
+        readonly
+    />
+</div>
                         </div>
                     </div>
                     <div class="row">
